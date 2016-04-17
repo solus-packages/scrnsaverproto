@@ -1,0 +1,18 @@
+name        : scrnsaverproto
+version     : 1.2.2
+release     : 4
+source      :
+    - http://xorg.freedesktop.org/releases/individual/proto/scrnsaverproto-1.2.2.tar.gz : d8dee19c52977f65af08fad6aa237bacee11bc5a33e1b9b064e8ac1fd99d6e79
+license     :
+    - MIT
+summary     : MIT Screen Saver Extension
+component   : xorg.proto
+patterns    : /
+description : |
+    This extension defines a protocol to control screensaver features and also to query screensaver info on specific windows.
+setup      : |
+    %configure
+build      : |
+    %make
+install    : |
+    %make_install
